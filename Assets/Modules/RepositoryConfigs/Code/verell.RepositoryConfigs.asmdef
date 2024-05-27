@@ -1,0 +1,16 @@
+{
+    "name": "verell.RepositoryConfigs",
+    "rootNamespace": "",
+    "references": [
+        "GUID:692cc59063f900a40ae769c1f2add8a1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
