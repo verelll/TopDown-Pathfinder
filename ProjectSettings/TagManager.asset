@@ -11,10 +11,10 @@ TagManager:
   - 
   - Water
   - UI
+  - LoadingUI
   - 
   - 
-  - 
-  - 
+  - Gameplay
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Loading
+    uniqueID: 2564178971
+    locked: 0
+  - name: MainUI
+    uniqueID: 3844566453
     locked: 0
