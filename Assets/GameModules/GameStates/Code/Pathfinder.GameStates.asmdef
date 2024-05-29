@@ -1,0 +1,25 @@
+{
+    "name": "Pathfinder.GameStates",
+    "rootNamespace": "",
+    "references": [
+        "GUID:692cc59063f900a40ae769c1f2add8a1",
+        "GUID:1f153efb77f1a004aa93da329573de11",
+        "GUID:6aed530a4b02f43468634404439e3117",
+        "GUID:42b07dc7f1cbaa04389e391eba4fea06",
+        "GUID:642a5ff9d21c8d14e8c855c8751755f2",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:4c5b9c5755ba6f24793abd864afe71f5",
+        "GUID:b8b2828534265a340a00153e369e38a3",
+        "GUID:7eeef8de5d26fbd4eb76cbc411f8cc4d",
+        "GUID:d28cbf4256f29bb49912353d7601f83a"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
