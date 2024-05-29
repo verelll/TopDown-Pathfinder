@@ -10,7 +10,9 @@ using UnityEditor;
 
 namespace verell.RepositoryConfigs
 {
-    [CreateAssetMenu(fileName = nameof(RepositoryConfig))]
+    [CreateAssetMenu(
+        menuName = "verell/" + nameof(RepositoryConfig), 
+        fileName = nameof(RepositoryConfig))]
     public sealed class RepositoryConfig : SerializedScriptableObject
     {
         private const string ConfigName = "RepositoryConfig.asset";
