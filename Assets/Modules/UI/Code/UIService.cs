@@ -11,8 +11,6 @@ namespace verell.UI
 	public sealed class UIService : SharedObject, ISceneLoader
 	{
 		private const string UISceneName = "UIScene";
-
-		[Inject] private ConfigsService _configsService;
 		
 		private readonly List<IUIElement> _uiElements;
 		
@@ -32,7 +30,7 @@ namespace verell.UI
 
 		protected override async UniTask Init()
 		{
-			_config = _configsService.GetConfig<UIConfig>();
+			_config = Configs.GetConfig<UIConfig>();
 
 			InitWidgets();
 			CreateScreens();
@@ -44,6 +42,8 @@ namespace verell.UI
 			{
 				DisposeUIElement(uiElement);
 			}
+			
+			_uiElements.Clear();
 		}
 
 #region Main
@@ -58,7 +58,6 @@ namespace verell.UI
 		private void DisposeUIElement(IUIElement element)
 		{
 			element.Dispose();
-			_uiElements.Remove(element);
 		}
 		
 
