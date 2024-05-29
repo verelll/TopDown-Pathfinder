@@ -1,0 +1,18 @@
+{
+    "name": "Pathfinder.LoadingScreen",
+    "rootNamespace": "",
+    "references": [
+        "GUID:692cc59063f900a40ae769c1f2add8a1",
+        "GUID:9b5fc41194558cc4b99872bf7c0d8042",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
