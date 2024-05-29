@@ -1,0 +1,21 @@
+{
+    "name": "Pathfinder.GameCharacter",
+    "rootNamespace": "",
+    "references": [
+        "GUID:692cc59063f900a40ae769c1f2add8a1",
+        "GUID:42b07dc7f1cbaa04389e391eba4fea06",
+        "GUID:41bbf1e133586254e807c8df67829a11",
+        "GUID:6aed530a4b02f43468634404439e3117",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:b8b2828534265a340a00153e369e38a3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
