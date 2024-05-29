@@ -1,0 +1,21 @@
+{
+    "name": "Pathfinder.Locations",
+    "rootNamespace": "",
+    "references": [
+        "GUID:692cc59063f900a40ae769c1f2add8a1",
+        "GUID:1f153efb77f1a004aa93da329573de11",
+        "GUID:41bbf1e133586254e807c8df67829a11",
+        "GUID:642a5ff9d21c8d14e8c855c8751755f2",
+        "GUID:e970d508ae1e64a49bf7c58eecd64977",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
