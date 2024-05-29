@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace verell.Saves
 {
     public static class SavesUtils
     {
-        private const string SaveDataPropertyName = "SaveTypeName";
+#if UNITY_EDITOR
         
+        private const string SaveDataPropertyName = "SaveTypeName";
+
         [MenuItem("verell/Saves/Open Saves Folder", priority = 0)]
         public static void OpenSavesFolder()
         {
@@ -63,5 +68,7 @@ namespace verell.Saves
                 .Where(x => typeof(IBaseSaveData).IsAssignableFrom(x) && !x.IsInterface && !x.IsAbstract)
                 .ToList();
         }
+        
+#endif
     }
 }

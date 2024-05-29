@@ -1,6 +1,9 @@
 using System.IO;
 using Sirenix.OdinInspector;
+
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 namespace verell.ScenesProvider
 {

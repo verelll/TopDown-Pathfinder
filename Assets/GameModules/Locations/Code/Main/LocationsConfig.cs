@@ -13,7 +13,16 @@ namespace Pathfinder.Locations
         [SerializeField, ValueDropdown(nameof(_sceneNames))] 
         private string _defaultLocation;
 
-        private ValueDropdownList<string> _sceneNames => SceneUtils.GetAllSceneNames();
+        private ValueDropdownList<string> _sceneNames
+        {
+            get
+            {
+#if UNITY_EDITOR
+                SceneUtils.GetAllSceneNames();
+#endif
+                return default;
+            }
+        }
         
         public string DefaultLocationName => _defaultLocation;
     }
