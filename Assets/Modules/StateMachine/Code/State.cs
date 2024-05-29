@@ -16,7 +16,5 @@ namespace verell.StateMachine
 
         public abstract UniTask Enter();
         public abstract UniTask Exit();
-
-        public virtual void Update() {}
     }
 }

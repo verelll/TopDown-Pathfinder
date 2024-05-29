@@ -10,15 +10,17 @@ namespace verell.StateMachine
     {
         private readonly IContainer _container;
         private Dictionary<Type, IState> _allStates;
-        private IState _activeState;
+        protected IState ActiveState { get; set; }
 
         protected BaseStateMachine(IContainer container)
         {
             _container = container;
         }
-        
-        void IStateMachine.Update() => _activeState?.Update();
 
+        public virtual async UniTask Init() { }
+
+        public virtual async UniTask Dispose() { }
+        
         protected void AddState(IState newState)
         {
             _allStates ??= new Dictionary<Type, IState>();
@@ -37,7 +39,7 @@ namespace verell.StateMachine
         public virtual async UniTask ChangeState<T>() where T : class, IState
         {
             var newStateType = typeof(T);
-            var prevState = _activeState;
+            var prevState = ActiveState;
             if(prevState != null)
             {
                 await prevState.Exit();
@@ -49,9 +51,9 @@ namespace verell.StateMachine
                 return;
             }
 
-            _activeState = state;
+            ActiveState = state;
             
-            await _activeState.Enter();
+            await ActiveState.Enter();
         }
     }
 }

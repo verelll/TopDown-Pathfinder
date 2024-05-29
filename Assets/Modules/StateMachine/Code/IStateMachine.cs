@@ -4,8 +4,8 @@ namespace verell.StateMachine
 {
     public interface IStateMachine
     {
-        void Update();
-
+        UniTask Init();
+        UniTask Dispose();
         UniTask ChangeState<T>() where T : class, IState;
     }
 }
